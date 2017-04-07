@@ -65,6 +65,9 @@ b.call the function you created in step 5.a. with the list you made in step 0.a.
 def add_fun(li):
     for items in list(range(0, len(li))):
         li[items] += 3
+        print(li)
+
+add_fun(var)
 
 
 """
@@ -73,6 +76,12 @@ a.Create a function that takes and prints 2 inputs.
 b.Call the function you created in step 6.a. with the list you modified in step 5.b. and the range() you made in
 step
  2.c.
+"""
+def two_inputs(x, y):
+    print(x, y)
+
+two_inputs(var, list3)
+"""
 7.Iterating through a list of lists using a function:
 a.Create a list that contains 3 lists. Each of those lists should be composed of all strings.
 b.Create a function that appends all of the strings from the list you made in step a into a new, single list.
@@ -80,3 +89,14 @@ b.Create a function that appends all of the strings from the list you made in st
  function should use 2 for loops.) This function should print the new list.
 c.Call the function you made in step 7.b. using the list you created in step 7.a. as its input.
 """
+three_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+def single_list(li):
+    onelist = []
+    for items in li:
+        for nums in items:
+            onelist.append(nums)
+    print(onelist)
+
+single_list(three_lists)
+
